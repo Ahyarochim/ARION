@@ -1,0 +1,14 @@
+# ARION v0.1.0 Dependencies
+#
+# Install all: pip install -r requirements.txt
+#
+# PyAudio note:
+#   PyAudio requires PortAudio. On Windows, install the pre-compiled wheel:
+#   pip install pipwin && pipwin install pyaudio
+#   OR download from: https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio
+
+SpeechRecognition>=3.10.0
+pyttsx3>=2.90
+PyAudio>=0.2.14
+pyyaml>=6.0
+pytest>=7.0

@@ -1,0 +1,37 @@
+# ============================================================
+#  ARION Configuration
+#  Edit this file to customize ARION's behavior.
+# ============================================================
+
+arion:
+  name: ARION
+  version: "0.1.0"
+
+# --- Voice Listener (Speech-to-Text) ---
+listener:
+  microphone_index: null   # null = use system default microphone
+  timeout: 5               # seconds to wait before giving up listening
+  phrase_limit: 10         # max seconds allowed for a single phrase
+
+# --- Speaker (Text-to-Speech) ---
+speaker:
+  engine: pyttsx3          # currently supported: pyttsx3
+  rate: 170                # words per minute (default: 200, lower = slower)
+  volume: 1.0              # 0.0 (silent) to 1.0 (full volume)
+  voice_index: 0           # 0 = first system voice, 1 = second, etc.
+
+# --- Browser ---
+browser:
+  chrome_path: null        # null = auto-detect; or set full path to chrome.exe
+  search_url: "https://www.google.com/search?q={query}"
+
+# --- Desktop Applications ---
+# Map spoken app names to their executable paths.
+# 'null' paths use Windows default associations (via 'start' command).
+apps:
+  notepad: "notepad.exe"
+  calculator: "calc.exe"
+  paint: "mspaint.exe"
+  word: null
+  excel: null
+  vscode: "code"
