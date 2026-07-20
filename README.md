@@ -1,64 +1,62 @@
 # 🤖 ARION
 
-### AI Engineering Assistant
+> **Automation Research Intelligence Operation Nexus**
 
-*"Think. Listen. Automate."*
+**Think. Listen. Understand. Automate.**
 
-> **Autonomous Responsive Intelligent Operation Network**
+ARION is a long-term AI Agent project focused on building an intelligent desktop assistant capable of understanding natural language, reasoning about user intent, and executing real-world actions through a modular tool-based architecture.
 
-ARION is an AI-powered engineering assistant designed to simplify daily tasks through voice interaction, desktop automation, and intelligent reasoning.
-
-This project is built as a long-term learning journey to explore Artificial Intelligence, Automation Engineering, Desktop Automation, IoT, and Large Language Models (LLMs).
+Unlike traditional voice assistants that rely on hardcoded commands, ARION is designed to evolve into a scalable AI Agent capable of integrating Large Language Models (LLMs), desktop automation, browser control, engineering tools, robotics, and IoT systems.
 
 ---
 
-## 🎯 Vision
+# ✨ Current Features
 
-Build an AI assistant capable of:
-
-- 🎤 Understanding voice commands
-- 🖥️ Controlling desktop applications
-- 🌐 Automating browser tasks
-- 🧠 Reasoning using Large Language Models (LLMs)
-- 📄 Reading and summarizing documents
-- 📊 Assisting engineering and automation tasks
-- 🤖 Integrating with IoT and robotic systems
+- 🎤 Voice Recognition
+- 🔊 Text-to-Speech
+- 🧠 Intent Interpretation (Regex-Based)
+- 🚀 Command Dispatcher
+- 🌐 Browser Automation
+- 💻 Desktop Application Launcher
+- ⚙️ Modular Tool Architecture
 
 ---
 
-## 🚀 Current Version
+# 🏗️ Current Architecture
 
-**v0.1.0 (Development)**
-
-Current progress:
-
-- [x] Project initialization
-- [x] GitHub repository setup
-- [x] Project structure
-- [ ] Voice Recognition
-- [ ] Text-to-Speech
-- [ ] Desktop Automation
-- [ ] Browser Automation
-- [ ] LLM Integration
-- [ ] Memory System
-- [ ] Computer Vision
-- [ ] Engineering Assistant
+```
+                 ┌──────────────┐
+                 │  Microphone  │
+                 └──────┬───────┘
+                        │
+                        ▼
+                ┌───────────────┐
+                │   Listener    │
+                └──────┬────────┘
+                       │
+                       ▼
+                ┌───────────────┐
+                │ Interpreter   │
+                │ (Intent Engine)│
+                └──────┬────────┘
+                       │
+                       ▼
+                ┌───────────────┐
+                │  Dispatcher   │
+                └──────┬────────┘
+                       │
+        ┌──────────────┼──────────────┐
+        ▼              ▼              ▼
+ Browser Tool     App Tool      System Tool
+        │              │              │
+        └──────────────┼──────────────┘
+                       ▼
+                   Speaker
+```
 
 ---
 
-## 🛠️ Tech Stack
-
-- Python
-- Git & GitHub
-- Speech Recognition *(planned)*
-- Pyttsx3 *(planned)*
-- OpenAI API *(planned)*
-- Browser Automation *(planned)*
-- Desktop Automation *(planned)*
-
----
-
-## 📁 Project Structure
+# 📂 Project Structure
 
 ```text
 ARION/
@@ -66,46 +64,148 @@ ARION/
 ├── assets/
 ├── docs/
 ├── modules/
+│   ├── interpreter.py
+│   ├── listener.py
+│   └── speaker.py
 │
-├── .gitignore
-├── README.md
+├── core/
+│   ├── config.py
+│   └── dispatcher.py
+│
+├── tools/
+│   ├── app_tool.py
+│   ├── browser_tool.py
+│   └── system_tool.py
+│
+├── tests/
+│
+├── main.py
 ├── requirements.txt
-└── main.py
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-## 🎯 Roadmap
+# 🚀 Development Roadmap
 
-### Phase 1
-- Voice Recognition
-- Text-to-Speech
-- Desktop Automation
+## ✅ v0.1.0 — Voice Foundation
 
-### Phase 2
-- Browser Automation
-- AI Command Processing
-
-### Phase 3
-- LLM Integration
-- Memory System
-
-### Phase 4
-- Engineering Assistant
-- IoT Integration
-- Robotics Support
+- [x] Voice Recognition
+- [x] Text-to-Speech
+- [x] Intent Interpreter
+- [x] Dispatcher
+- [x] Browser Tool
+- [x] Desktop Application Tool
+- [x] System Tool
 
 ---
 
-## 👨‍💻 Author
+## 🚧 v0.2.0 — Smarter Commands
+
+- [ ] Multi-step Commands
+- [ ] Context Manager
+- [ ] Planner Module
+- [ ] Better Intent Parsing
+
+---
+
+## 🤖 v0.3.0 — AI Integration
+
+- [ ] LLM Integration
+- [ ] AI Reasoning
+- [ ] Memory System
+- [ ] Conversation Context
+
+---
+
+## 🧠 v0.4.0 — AI Agent
+
+- [ ] Tool Calling
+- [ ] Autonomous Planning
+- [ ] Multi-Agent Workflow
+- [ ] Plugin System
+
+---
+
+## ⚙️ v1.0.0 — Engineering Assistant
+
+- [ ] Engineering Knowledge
+- [ ] PLC Assistant
+- [ ] Robotics Assistant
+- [ ] IoT Integration
+- [ ] MQTT Support
+- [ ] Document Understanding
+- [ ] Computer Vision
+
+---
+
+# 💡 Design Philosophy
+
+ARION is designed using a modular architecture where every component has a single responsibility.
+
+Rather than embedding all logic inside a single script, the system separates:
+
+- Listening
+- Understanding
+- Decision Making
+- Action Execution
+- Response Generation
+
+This design allows future upgrades—such as replacing the rule-based interpreter with an LLM—without changing the rest of the system.
+
+---
+
+# 🛠️ Technology
+
+- Python
+- SpeechRecognition
+- pyttsx3
+- Regular Expressions (Regex)
+- Desktop Automation
+- Browser Automation
+
+Future:
+
+- OpenAI API
+- Ollama
+- LangGraph
+- MCP (Model Context Protocol)
+- Computer Vision
+- Memory System
+
+---
+
+# 🎯 Vision
+
+To build an AI Agent that can:
+
+- Understand natural language
+- Control desktop applications
+- Automate repetitive workflows
+- Interact with browsers
+- Assist software development
+- Help with engineering tasks
+- Integrate with IoT and robotics
+
+ARION is intended to become a personal AI Engineering Assistant capable of growing beyond simple voice commands into a complete autonomous assistant.
+
+---
+
+# 👨‍💻 Author
 
 **Ahya Rochim**
 
 Automation Engineering Technology Student  
 Universitas Diponegoro
 
+GitHub:
+https://github.com/Ahyarochim
+
 ---
 
-## ⭐ Project Status
+# ⭐ Project Status
 
-🚧 This project is currently under active development.
+🚧 **Actively Under Development**
+
+Every version introduces new capabilities as ARION evolves from a voice-controlled desktop assistant into a fully autonomous AI Agent.

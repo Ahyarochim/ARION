@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import logging
 
+# pyrefly: ignore [missing-import]
 import speech_recognition as sr
 
 from core.config import settings
